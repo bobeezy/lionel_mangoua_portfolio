@@ -1,592 +1,602 @@
-/*!
-                 _____________________
-                 |###################|          
-                 |###################|          
-                 |###################|          
-                 |###################|          
-     ((-----------------------------------------
-     | \         /  /@@ \      /@@ \  \
-      \ \,      /  (     )    (     )  \            _____
-       \ \      |   \___/      \___/   |           /  __ \
-        \ ""*-__/                      \           | |  | |
-         ""*-_                         "-_         | |  """
-              \    -.  _________   .-   __"-.__.-((  ))
-               \,    \^    U    ^/     /  "-___--((  ))
-                 \,   \         /    /'            | |
-                  |    \       /   /'              | |
-                  |     "-----"    \               | |
-                 /                  "*-._          | |
-                /   /\          /*-._    \         | |
-               /   /  "\______/"     /   /         | |
-              /   /                 /   /          | |
-             /. ./                  |. .|          """
-            /  | |                  / | \
-           /   |  \                /  |  \   
-          /.-./.-.|               /.-.|.-.\
-*/ /*!  
- * @description: Blazingchilli
- * @version: 1.0
- * @author: Alex Littlejohn
- */ /*! normalize.css v2.1.1 | MIT License | git.io/normalize */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-[hidden] {
-  display: none;
-}
-html {
-  color: #2c3e50;
-  font-size: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-  line-height: 1.5;
-  background: #fff;
-  color: #383838;
-}
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-a:focus {
-  outline: 0;
-}
-a:active,
-a:hover {
-  outline: 0;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-h1,
-h2,
-h4,
-h5,
-h6,
-strong {
-  font-weight: 300;
-}
-h2 {
-  font-size: 34px;
-}
-h3 {
-  font-weight: 400;
-  margin: 0 0 60px 0;
-  padding: 0 0 20px 0;
-  position: relative;
-}
-h3:after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 25%;
-  height: 1px;
-  background: #e5e5e5;
-}
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-b,
-strong {
-  font-weight: 700;
-}
-mark {
-  background: #ff0;
-  color: #000;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-pre {
-  white-space: pre-wrap;
-}
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-small {
-  font-size: 80%;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-img {
-  border: 0;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-figure {
-  margin: 0;
-}
-label[for] {
-  cursor: pointer;
-}
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-legend {
-  border: 0;
-  padding: 0;
-}
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 100%;
-  margin: 0;
-  color: #2c3e50;
-}
-button,
-input {
-  line-height: normal;
-}
-button,
-select {
-  text-transform: none;
-}
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-input[type="search"] {
-  -webkit-appearance: textfield;
-}
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-html,
-body {
-  height: 100%;
-}
-.section {
-  width: 100%;
-  padding: 80px 40px;
-  overflow: hidden;
-  background: #fff;
-}
-.center {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-.sectionHeading {
-  margin: 0 0 40px 0;
-}
-.contact {
-  background-color: #fff;
-}
-.sectionHeader {
-  text-align: center;
-  padding: 30px;
-}
-.sectionHeader h2 {
-  color: #fff;
-}
-.column {
-  padding: 3% 0;
-}
-@media screen and (min-width: 30em) {
-  .sectionHeader {
-    padding: 60px;
+function launchParticlesJS(a, b) {
+  function c() {
+    pJS.fn.canvasInit(),
+      pJS.fn.canvasSize(),
+      pJS.fn.canvasPaint(),
+      pJS.fn.particlesCreate(),
+      pJS.fn.particlesDraw();
   }
-}
-@media screen and (min-width: 48em) {
-  .sectionHeader {
-    padding: 100px;
+  function d() {
+    pJS.fn.particlesDraw(), (pJS.fn.requestAnimFrame = requestAnimFrame(d));
   }
-}
-@media screen and (min-width: 60em) {
-  .sectionHeader {
-    padding: 140px;
+  var e = document.querySelector("#" + a + " > canvas");
+  if (
+    ((pJS = {
+      canvas: { el: e, w: e.offsetWidth, h: e.offsetHeight },
+      particles: {
+        color: "#fff",
+        shape: "circle",
+        opacity: 1,
+        size: 2.5,
+        size_random: !0,
+        nb: 200,
+        line_linked: {
+          enable_auto: !0,
+          distance: 100,
+          color: "#fff",
+          opacity: 1,
+          width: 1,
+          condensed_mode: { enable: !0, rotateX: 65e3, rotateY: 65e3 }
+        },
+        anim: { enable: !0, speed: 1 },
+        array: []
+      },
+      interactivity: {
+        enable: !0,
+        mouse: { distance: 100 },
+        detect_on: "canvas",
+        mode: "grab",
+        line_linked: { opacity: 1 },
+        events: { onclick: { enable: !0, mode: "push", nb: 4 } }
+      },
+      retina_detect: !1,
+      fn: { vendors: { interactivity: {} } }
+    }),
+    b)
+  ) {
+    if (b.particles) {
+      var f = b.particles;
+      if (
+        (f.color && (pJS.particles.color = f.color),
+        f.shape && (pJS.particles.shape = f.shape),
+        f.opacity && (pJS.particles.opacity = f.opacity),
+        f.size && (pJS.particles.size = f.size),
+        0 == f.size_random && (pJS.particles.size_random = f.size_random),
+        f.nb && (pJS.particles.nb = f.nb),
+        f.line_linked)
+      ) {
+        var g = f.line_linked;
+        if (
+          (0 == g.enable_auto &&
+            (pJS.particles.line_linked.enable_auto = g.enable_auto),
+          g.distance && (pJS.particles.line_linked.distance = g.distance),
+          g.color && (pJS.particles.line_linked.color = g.color),
+          g.opacity && (pJS.particles.line_linked.opacity = g.opacity),
+          g.width && (pJS.particles.line_linked.width = g.width),
+          g.condensed_mode)
+        ) {
+          var h = g.condensed_mode;
+          0 == h.enable &&
+            (pJS.particles.line_linked.condensed_mode.enable = h.enable),
+            h.rotateX &&
+              (pJS.particles.line_linked.condensed_mode.rotateX = h.rotateX),
+            h.rotateY &&
+              (pJS.particles.line_linked.condensed_mode.rotateY = h.rotateY);
+        }
+      }
+      if (f.anim) {
+        var i = f.anim;
+        0 == i.enable && (pJS.particles.anim.enable = i.enable),
+          i.speed && (pJS.particles.anim.speed = i.speed);
+      }
+    }
+    if (b.interactivity) {
+      var j = b.interactivity;
+      if (
+        (0 == j.enable && (pJS.interactivity.enable = j.enable),
+        j.mouse &&
+          j.mouse.distance &&
+          (pJS.interactivity.mouse.distance = j.mouse.distance),
+        j.detect_on && (pJS.interactivity.detect_on = j.detect_on),
+        j.mode && (pJS.interactivity.mode = j.mode),
+        j.line_linked &&
+          j.line_linked.opacity &&
+          (pJS.interactivity.line_linked.opacity = j.line_linked.opacity),
+        j.events)
+      ) {
+        var k = j.events;
+        if (k.onclick) {
+          var l = k.onclick;
+          0 == l.enable && (pJS.interactivity.events.onclick.enable = !1),
+            "push" != l.mode &&
+              (pJS.interactivity.events.onclick.mode = l.mode),
+            l.nb && (pJS.interactivity.events.onclick.nb = l.nb);
+        }
+      }
+    }
+    pJS.retina_detect = b.retina_detect;
   }
-  .no-flexbox .columns {
-    overflow: hidden;
+  (pJS.particles.color_rgb = hexToRgb(pJS.particles.color)),
+    (pJS.particles.line_linked.color_rgb_line = hexToRgb(
+      pJS.particles.line_linked.color
+    )),
+    pJS.retina_detect &&
+      window.devicePixelRatio > 1 &&
+      ((pJS.retina = !0),
+      (pJS.canvas.w = 2 * pJS.canvas.el.offsetWidth),
+      (pJS.canvas.h = 2 * pJS.canvas.el.offsetHeight),
+      (pJS.particles.anim.speed = 2 * pJS.particles.anim.speed),
+      (pJS.particles.line_linked.distance =
+        2 * pJS.particles.line_linked.distance),
+      (pJS.particles.line_linked.width = 2 * pJS.particles.line_linked.width),
+      (pJS.interactivity.mouse.distance =
+        2 * pJS.interactivity.mouse.distance)),
+    (pJS.fn.canvasInit = function() {
+      pJS.canvas.ctx = pJS.canvas.el.getContext("2d");
+    }),
+    (pJS.fn.canvasSize = function() {
+      (pJS.canvas.el.width = pJS.canvas.w),
+        (pJS.canvas.el.height = pJS.canvas.h),
+        (window.onresize = function() {
+          pJS &&
+            ((pJS.canvas.w = pJS.canvas.el.offsetWidth),
+            (pJS.canvas.h = pJS.canvas.el.offsetHeight),
+            pJS.retina && ((pJS.canvas.w *= 2), (pJS.canvas.h *= 2)),
+            (pJS.canvas.el.width = pJS.canvas.w),
+            (pJS.canvas.el.height = pJS.canvas.h),
+            pJS.fn.canvasPaint(),
+            pJS.particles.anim.enable ||
+              (pJS.fn.particlesRemove(), pJS.fn.canvasRemove(), c()));
+        });
+    }),
+    (pJS.fn.canvasPaint = function() {
+      pJS.canvas.ctx.fillRect(0, 0, pJS.canvas.w, pJS.canvas.h);
+    }),
+    (pJS.fn.canvasRemove = function() {
+      pJS.canvas.ctx.clearRect(0, 0, pJS.canvas.w, pJS.canvas.h);
+    }),
+    (pJS.fn.particle = function(a, b, c) {
+      (this.x = c ? c.x : Math.random() * pJS.canvas.w),
+        (this.y = c ? c.y : Math.random() * pJS.canvas.h),
+        (this.radius =
+          (pJS.particles.size_random ? Math.random() : 1) * pJS.particles.size),
+        pJS.retina && (this.radius *= 2),
+        (this.color = a),
+        (this.opacity = b),
+        (this.vx = -0.5 + Math.random()),
+        (this.vy = -0.5 + Math.random()),
+        (this.draw = function() {
+          switch (((pJS.canvas.ctx.fillStyle =
+            "rgba(" +
+            this.color.r +
+            "," +
+            this.color.g +
+            "," +
+            this.color.b +
+            "," +
+            this.opacity +
+            ")"),
+          pJS.canvas.ctx.beginPath(),
+          pJS.particles.shape)) {
+            case "circle":
+              pJS.canvas.ctx.arc(
+                this.x,
+                this.y,
+                this.radius,
+                0,
+                2 * Math.PI,
+                !1
+              );
+              break;
+            case "edge":
+              pJS.canvas.ctx.rect(
+                this.x,
+                this.y,
+                2 * this.radius,
+                2 * this.radius
+              );
+              break;
+            case "triangle":
+              pJS.canvas.ctx.moveTo(this.x, this.y),
+                pJS.canvas.ctx.lineTo(
+                  this.x + this.radius,
+                  this.y + 2 * this.radius
+                ),
+                pJS.canvas.ctx.lineTo(
+                  this.x - this.radius,
+                  this.y + 2 * this.radius
+                ),
+                pJS.canvas.ctx.closePath();
+          }
+          pJS.canvas.ctx.fill();
+        });
+    }),
+    (pJS.fn.particlesCreate = function() {
+      for (var a = 0; a < pJS.particles.nb; a++)
+        pJS.particles.array.push(
+          new pJS.fn.particle(pJS.particles.color_rgb, pJS.particles.opacity)
+        );
+    }),
+    (pJS.fn.particlesAnimate = function() {
+      for (var a = 0; a < pJS.particles.array.length; a++) {
+        var b = pJS.particles.array[a];
+        (b.x += b.vx * (pJS.particles.anim.speed / 2)),
+          (b.y += b.vy * (pJS.particles.anim.speed / 2)),
+          b.x - b.radius > pJS.canvas.w
+            ? (b.x = b.radius)
+            : b.x + b.radius < 0 && (b.x = pJS.canvas.w + b.radius),
+          b.y - b.radius > pJS.canvas.h
+            ? (b.y = b.radius)
+            : b.y + b.radius < 0 && (b.y = pJS.canvas.h + b.radius);
+        for (var c = a + 1; c < pJS.particles.array.length; c++) {
+          var d = pJS.particles.array[c];
+          if (
+            (pJS.particles.line_linked.enable_auto &&
+              pJS.fn.vendors.distanceParticles(b, d),
+            pJS.interactivity.enable)
+          )
+            switch (pJS.interactivity.mode) {
+              case "grab":
+                pJS.fn.vendors.interactivity.grabParticles(b, d);
+            }
+        }
+      }
+    }),
+    (pJS.fn.particlesDraw = function() {
+      pJS.canvas.ctx.clearRect(0, 0, pJS.canvas.w, pJS.canvas.h),
+        pJS.fn.particlesAnimate();
+      for (var a = 0; a < pJS.particles.array.length; a++) {
+        var b = pJS.particles.array[a];
+        b.draw(
+          "rgba(" +
+            b.color.r +
+            "," +
+            b.color.g +
+            "," +
+            b.color.b +
+            "," +
+            b.opacity +
+            ")"
+        );
+      }
+    }),
+    (pJS.fn.particlesRemove = function() {
+      pJS.particles.array = [];
+    }),
+    (pJS.fn.vendors.distanceParticles = function(a, b) {
+      var c = a.x - b.x,
+        d = a.y - b.y,
+        e = Math.sqrt(c * c + d * d);
+      if (e <= pJS.particles.line_linked.distance) {
+        var f = pJS.particles.line_linked.color_rgb_line;
+        if (
+          (pJS.canvas.ctx.beginPath(),
+          (pJS.canvas.ctx.strokeStyle =
+            "rgba(" +
+            f.r +
+            "," +
+            f.g +
+            "," +
+            f.b +
+            "," +
+            (pJS.particles.line_linked.opacity -
+              e / pJS.particles.line_linked.distance) +
+            ")"),
+          pJS.canvas.ctx.moveTo(a.x, a.y),
+          pJS.canvas.ctx.lineTo(b.x, b.y),
+          (pJS.canvas.ctx.lineWidth = pJS.particles.line_linked.width),
+          pJS.canvas.ctx.stroke(),
+          pJS.canvas.ctx.closePath(),
+          pJS.particles.line_linked.condensed_mode.enable)
+        ) {
+          var c = a.x - b.x,
+            d = a.y - b.y,
+            g = c / (1e3 * pJS.particles.line_linked.condensed_mode.rotateX),
+            h = d / (1e3 * pJS.particles.line_linked.condensed_mode.rotateY);
+          (b.vx += g), (b.vy += h);
+        }
+      }
+    }),
+    (pJS.fn.vendors.interactivity.listeners = function() {
+      if ("window" == pJS.interactivity.detect_on) var a = window;
+      else var a = pJS.canvas.el;
+      if (
+        ((a.onmousemove = function(b) {
+          if (a == window)
+            var c = b.clientX,
+              d = b.clientY;
+          else
+            var c = b.offsetX,
+              d = b.offsetY;
+          pJS &&
+            ((pJS.interactivity.mouse.pos_x = c),
+            (pJS.interactivity.mouse.pos_y = d),
+            pJS.retina &&
+              ((pJS.interactivity.mouse.pos_x *= 2),
+              (pJS.interactivity.mouse.pos_y *= 2)),
+            (pJS.interactivity.status = "mousemove"));
+        }),
+        (a.onmouseleave = function() {
+          pJS &&
+            ((pJS.interactivity.mouse.pos_x = 0),
+            (pJS.interactivity.mouse.pos_y = 0),
+            (pJS.interactivity.status = "mouseleave"));
+        }),
+        pJS.interactivity.events.onclick.enable)
+      )
+        switch (pJS.interactivity.events.onclick.mode) {
+          case "push":
+            a.onclick = function() {
+              if (pJS)
+                for (var a = 0; a < pJS.interactivity.events.onclick.nb; a++)
+                  pJS.particles.array.push(
+                    new pJS.fn.particle(
+                      pJS.particles.color_rgb,
+                      pJS.particles.opacity,
+                      {
+                        x: pJS.interactivity.mouse.pos_x,
+                        y: pJS.interactivity.mouse.pos_y
+                      }
+                    )
+                  );
+            };
+            break;
+          case "remove":
+            a.onclick = function() {
+              pJS.particles.array.splice(
+                0,
+                pJS.interactivity.events.onclick.nb
+              );
+            };
+        }
+    }),
+    (pJS.fn.vendors.interactivity.grabParticles = function(a, b) {
+      var c = a.x - b.x,
+        d = a.y - b.y,
+        e = Math.sqrt(c * c + d * d),
+        f = a.x - pJS.interactivity.mouse.pos_x,
+        g = a.y - pJS.interactivity.mouse.pos_y,
+        h = Math.sqrt(f * f + g * g);
+      if (
+        e <= pJS.particles.line_linked.distance &&
+        h <= pJS.interactivity.mouse.distance &&
+        "mousemove" == pJS.interactivity.status
+      ) {
+        var i = pJS.particles.line_linked.color_rgb_line;
+        pJS.canvas.ctx.beginPath(),
+          (pJS.canvas.ctx.strokeStyle =
+            "rgba(" +
+            i.r +
+            "," +
+            i.g +
+            "," +
+            i.b +
+            "," +
+            (pJS.interactivity.line_linked.opacity -
+              h / pJS.interactivity.mouse.distance) +
+            ")"),
+          pJS.canvas.ctx.moveTo(a.x, a.y),
+          pJS.canvas.ctx.lineTo(
+            pJS.interactivity.mouse.pos_x,
+            pJS.interactivity.mouse.pos_y
+          ),
+          (pJS.canvas.ctx.lineWidth = pJS.particles.line_linked.width),
+          pJS.canvas.ctx.stroke(),
+          pJS.canvas.ctx.closePath();
+      }
+    }),
+    (pJS.fn.vendors.destroy = function() {
+      cancelAnimationFrame(pJS.fn.requestAnimFrame), e.remove(), delete pJS;
+    }),
+    c(),
+    pJS.particles.anim.enable && d(),
+    pJS.interactivity.enable && pJS.fn.vendors.interactivity.listeners();
+}
+function hexToRgb(a) {
+  var b = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+  a = a.replace(b, function(a, b, c, d) {
+    return b + b + c + c + d + d;
+  });
+  var c = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(a);
+  return c
+    ? { r: parseInt(c[1], 16), g: parseInt(c[2], 16), b: parseInt(c[3], 16) }
+    : null;
+}
+(window.Modernizr = (function(a, b, c) {
+  function d(a) {
+    s.cssText = a;
   }
-  .no-flexbox .column {
-    float: left;
+  function e(a, b) {
+    return typeof a === b;
   }
-  .column {
-    width: 33%;
-    padding: 0 3%;
+  function f(a, b) {
+    return !!~("" + a).indexOf(b);
   }
-  .flexbox .columns {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  function g(a, b) {
+    for (var d in a) {
+      var e = a[d];
+      if (!f(e, "-") && s[e] !== c) return "pfx" == b ? e : !0;
+    }
+    return !1;
   }
-}
-.navBar {
-  padding: 0 20px;
-  width: 100%;
-  position: absolute;
-}
-.logo {
-  text-align: center;
-  display: block;
-  padding: 20px 0;
-  float: left;
-}
-.logo img {
-  margin: 0;
-  height: 60px;
-}
-.logo .mobile {
-  display: block;
-}
-.logo .desktop {
-  display: none;
-}
-.nav {
-  list-style: none;
-  margin: 0;
-  text-align: center;
-  float: right;
-  padding: 0;
-}
-.nav li {
-  display: inline-block;
-}
-.nav a {
-  padding: 0 15px;
-  color: #c0202f;
-}
-.nav a:hover {
-  background: #fff;
-  color: #c0202f;
-}
-@media screen and (max-width: 60em) {
-  .logo {
-    float: left;
-    height: 60px;
-    padding: 0;
-    margin-top: 20px;
+  function h(a, b, d) {
+    for (var f in a) {
+      var g = b[a[f]];
+      if (g !== c)
+        return d === !1 ? a[f] : e(g, "function") ? g.bind(d || b) : g;
+    }
+    return !1;
   }
-  .logo img {
-    height: 100%;
+  function i(a, b, c) {
+    var d = a.charAt(0).toUpperCase() + a.slice(1),
+      f = (a + " " + u.join(d + " ") + d).split(" ");
+    return e(b, "string") || e(b, "undefined")
+      ? g(f, b)
+      : ((f = (a + " " + v.join(d + " ") + d).split(" ")), h(f, b, c));
   }
-  .navContainer {
-    background: #c0202f url(images/list.png) center center no-repeat;
-    width: 44px;
-    height: 44px;
-    position: fixed;
-    margin-top: 20px;
-    right: 20px;
-    z-index: 10;
-  }
-  .nav {
-    display: none;
-    background: #c0202f;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    text-align: left;
-  }
-  .nav li {
-    display: block;
-  }
-  .nav a {
-    display: block;
-    height: 44px;
-    line-height: 44px;
-    padding: 0 24px;
-    color: #fff;
-  }
-}
-@media screen and (min-width: 30em) {
-  .introBlurb {
-    font-size: 32px;
-  }
-}
-@media screen and (min-width: 48em) {
-  .intro {
-    bottom: 30px;
-  }
-  .introBlurb {
-    font-size: 36px;
-  }
-  .callToAction {
-    font-size: 20px;
-    margin: 30px 0 0 0;
-  }
-}
-@media screen and (min-width: 60em) {
-  .logo .mobile {
-    display: none;
-  }
-  .logo .desktop {
-    display: block;
-  }
-  .intro {
-    bottom: 50px;
-  }
-  .introBlurb {
-    font-size: 40px;
-  }
-  .callToAction {
-    font-size: 24px;
-    margin: 50px 0 0 0;
-  }
-  .nav {
-    padding: 40px 0 0 0;
-    display: block !important;
-  }
-  .navBar {
-    background: #fff;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    position: fixed;
-    z-index: 10;
-  }
-}
-.header {
-  height: 100%;
-  position: relative;
-  text-align: center;
-}
-.particles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background: #c0202f url(images/background.jpg) center center;
-  background-size: 100% 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.definitionImage {
-  padding: 0 30px;
-  max-width: 100%;
-}
-.definition {
-  color: #fff;
-}
-.introBlurb {
-  padding: 5% 30px 0 30px;
-  color: #fff;
-  font-size: 26px;
-  margin: 0;
-  font-weight: 300;
-}
-.intro {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  right: 0;
-}
-.callToAction {
-  padding: 0 32px;
-  font-size: 16px;
-  height: 60px;
-  line-height: 60px;
-  display: inline-block;
-  color: #fff;
-  border-radius: 30px;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 15px 0 0 0;
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-  position: relative;
-  background: #941924;
-}
-.callToAction:hover {
-  background-color: #69111a;
-}
-.logos {
-  list-style: none;
-  text-align: center;
-  margin-top: 35px;
-}
-.logos li {
-  display: inline-block;
-  padding: 10px 20px;
-}
-.logos img {
-  max-height: 24px;
-}
-@media screen and (min-width: 30em) {
-  .introBlurb {
-    font-size: 32px;
-  }
-}
-@media screen and (min-width: 48em) {
-  .intro {
-    bottom: 30px;
-  }
-  .introBlurb {
-    font-size: 36px;
-  }
-  .callToAction {
-    font-size: 20px;
-    margin: 30px 0 0 0;
-  }
-}
-@media screen and (min-width: 60em) {
-  .intro {
-    bottom: 50px;
-  }
-  .introBlurb {
-    font-size: 40px;
-  }
-  .callToAction {
-    font-size: 24px;
-    margin: 50px 0 0 0;
-  }
-}
-.aboutItem {
-  text-align: center;
-  margin: 40px;
-}
-.bubbleIcon {
-  border-radius: 50%;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-  background: #331c26;
-  padding: 25px;
-  box-shadow: 0 0 0 0 #331c26;
-}
-.aboutItem:hover .bubbleIcon,
-.bubbleIcon:hover {
-  box-shadow: 0 0 0 4px #331c26;
-}
-.about h2 {
-  margin: 0 0 10px 0;
-}
-.about h3 {
-  margin: 0 0 60px 0;
-}
-@media screen and (min-width: 48em) {
-  .aboutItem {
-    float: left;
-    width: 45%;
-    margin: 0 5% 0 0;
-  }
-}
-@media screen and (min-width: 60em) {
-  .aboutItem {
-    width: 21%;
-    margin: 0 2% 0 2%;
-  }
-}
-.focus .columns {
-  padding: 3% 0;
-}
-.focus h3:after {
-  background: #555;
-}
-.focus ul {
-  margin: 0;
-  padding: 0;
-}
-.focus h3 {
-  margin: 40px 0 40px 0;
-}
-.focus .bubbleIcon {
-  margin: 0 auto;
-  display: block;
-}
-.columnHeader h4 {
-  margin-bottom: 0;
-}
-@media screen and (min-width: 60em) {
-  .focus h2 {
-    padding-left: 1.5%;
-  }
-  .focus .column {
-    width: 30%;
-    margin: 1.5%;
-    padding: 30px;
-    background: #f5f5f5;
-  }
-}
-.contact {
-  padding-bottom: 200px;
-}
-.contact h4 {
-  margin-bottom: 1px;
-}
-.contact p {
-  margin-top: 0;
-}
-/*# sourceMappingURL=blazingchilli.css.map */
+  var j,
+    k,
+    l,
+    m = "2.8.3",
+    n = {},
+    o = !0,
+    p = b.documentElement,
+    q = "modernizr",
+    r = b.createElement(q),
+    s = r.style,
+    t = ({}.toString, "Webkit Moz O ms"),
+    u = t.split(" "),
+    v = t.toLowerCase().split(" "),
+    w = {},
+    x = [],
+    y = x.slice,
+    z = {}.hasOwnProperty;
+  (l =
+    e(z, "undefined") || e(z.call, "undefined")
+      ? function(a, b) {
+          return b in a && e(a.constructor.prototype[b], "undefined");
+        }
+      : function(a, b) {
+          return z.call(a, b);
+        }),
+    Function.prototype.bind ||
+      (Function.prototype.bind = function(a) {
+        var b = this;
+        if ("function" != typeof b) throw new TypeError();
+        var c = y.call(arguments, 1),
+          d = function() {
+            if (this instanceof d) {
+              var e = function() {};
+              e.prototype = b.prototype;
+              var f = new e(),
+                g = b.apply(f, c.concat(y.call(arguments)));
+              return Object(g) === g ? g : f;
+            }
+            return b.apply(a, c.concat(y.call(arguments)));
+          };
+        return d;
+      }),
+    (w.flexbox = function() {
+      return i("flexWrap");
+    }),
+    (w.canvas = function() {
+      var a = b.createElement("canvas");
+      return !(!a.getContext || !a.getContext("2d"));
+    }),
+    (w.csstransforms = function() {
+      return !!i("transform");
+    });
+  for (var A in w)
+    l(w, A) &&
+      ((k = A.toLowerCase()), (n[k] = w[A]()), x.push((n[k] ? "" : "no-") + k));
+  return (
+    (n.addTest = function(a, b) {
+      if ("object" == typeof a) for (var d in a) l(a, d) && n.addTest(d, a[d]);
+      else {
+        if (((a = a.toLowerCase()), n[a] !== c)) return n;
+        (b = "function" == typeof b ? b() : b),
+          "undefined" != typeof o &&
+            o &&
+            (p.className += " " + (b ? "" : "no-") + a),
+          (n[a] = b);
+      }
+      return n;
+    }),
+    d(""),
+    (r = j = null),
+    (n._version = m),
+    (n._domPrefixes = v),
+    (n._cssomPrefixes = u),
+    (n.testProp = function(a) {
+      return g([a]);
+    }),
+    (n.testAllProps = i),
+    (p.className =
+      p.className.replace(/(^|\s)no-js(\s|$)/, "$1$2") +
+      (o ? " js " + x.join(" ") : "")),
+    n
+  );
+})(this, this.document)),
+  (window.requestAnimFrame = (function() {
+    return (
+      window.requestAnimationFrame ||
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      window.oRequestAnimationFrame ||
+      window.msRequestAnimationFrame ||
+      function(a) {
+        window.setTimeout(a, 1e3 / 60);
+      }
+    );
+  })()),
+  (window.cancelRequestAnimFrame = (function() {
+    return (
+      window.cancelAnimationFrame ||
+      window.webkitCancelRequestAnimationFrame ||
+      window.mozCancelRequestAnimationFrame ||
+      window.oCancelRequestAnimationFrame ||
+      window.msCancelRequestAnimationFrame ||
+      clearTimeout
+    );
+  })()),
+  (window.particlesJS = function(a, b) {
+    "string" != typeof a && ((b = a), (a = "particles-js")),
+      a || (a = "particles-js");
+    var c = document.createElement("canvas");
+    (c.style.width = "100%"), (c.style.height = "100%");
+    var d = document.getElementById(a).appendChild(c);
+    null != d && launchParticlesJS(a, b);
+  }),
+  $(function() {
+    var a = function() {
+      var a = window.innerWidth,
+        b = window.innerHeight,
+        c = (a + b) / 12,
+        d = "#930F1B";
+      particlesJS("particles", {
+        particles: {
+          color: d,
+          shape: "circle",
+          opacity: 1,
+          size: 2.5,
+          size_random: !0,
+          nb: c,
+          line_linked: {
+            enable_auto: !0,
+            distance: 250,
+            color: d,
+            opacity: 0.5,
+            width: 1,
+            condensed_mode: { enable: !1, rotateX: 600, rotateY: 600 }
+          },
+          anim: { enable: !0, speed: 2.5 }
+        },
+        interactivity: {
+          enable: !1,
+          mouse: { distance: 250 },
+          detect_on: "canvas",
+          mode: "grab",
+          line_linked: { opacity: 0.5 },
+          events: { onclick: { push_particles: { enable: !0, nb: 4 } } }
+        },
+        retina_detect: !0
+      });
+    };
+    Modernizr.canvas && a();
+  }),
+  $(function() {
+    var a = $("html, body"),
+      b = $(".nav a, .callToAction"),
+      c = $(".navContainer"),
+      d = $(".nav");
+    a.on("click", function() {
+      d.hide();
+    }),
+      c.on("click", function(a) {
+        a.stopPropagation(), d.toggle();
+      }),
+      b.on("click", function() {
+        var b = $(this).attr("href"),
+          c = $(b).offset().top,
+          d = window.innerWidth,
+          e = 106;
+        return 960 > d && (e = 0), a.animate({ scrollTop: c - e }, 500), !1;
+      }),
+      a.bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(b) {
+        (b.which > 0 ||
+          "mousedown" === b.type ||
+          "mousewheel" === b.type ||
+          "touchstart" == b.type) &&
+          a.stop().unbind("scroll mousedown DOMMouseScroll mousewheel keyup");
+      });
+  });
